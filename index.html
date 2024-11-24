@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American Rock Music</title>
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      margin: 0 15px;
+    }
+    a:hover {
+      color: #e63946;
+    }
+    h1, h2, h3 {
+      margin: 0 0 10px;
+    }
+    p {
+      margin: 0 0 15px;
+    }
+    
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero .overlay h1 {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+
+    /* Story Section */
+    .story {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .story img {
+      max-width: 400px;
+      margin: 20px 0;
+    }
+
+    /* Blog Section */
+    .blog {
+      padding: 50px 20px;
+      background: #f8f9fa;
+    }
+    .blog .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .blog .article {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+    }
+    .blog img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Subscribe Section */
+    .subscribe {
+      padding: 50px 20px;
+      background: #6c757d;
+      color: white;
+      text-align: center;
+    }
+    .subscribe input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 250px;
+      max-width: 80%;
+    }
+    .subscribe button {
+      padding: 10px 20px;
+      background: #e63946;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    .subscribe button:hover {
+      background: #d62828;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 10px 20px;
+      background: #212529;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">AMERICAN ROCK</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#story">Story</a>
+      <a href="#blog">Blog</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="fon.png" alt="Rock Music Hero">
+    <div class="overlay">
+      <h1>Feel the Vibes</h1>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <h2>Story</h2>
+    <img src="story.jpg" alt="Rock Story Image">
+    <p>Rock music has shaped generations, from the rebellious sounds of the '60s to the electric performances of today. Dive into the roots of American rock and roll.</p>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Blog</h2>
+    <div class="articles">
+      <div class="article">
+        <img src="nirv.png" alt="Daily Rock News">
+        <h3>Daily Rock News</h3>
+        <p>Latest updates on the rock music scene.</p>
+      </div>
+      <div class="article">
+        <img src="kiss.jpg" alt="Classic Rock Bands">
+        <h3>Classic Rock Bands</h3>
+        <p>A dive into the greatest bands of all time.</p>
+      </div>
+      <div class="article">
+        <img src="kill.png" alt="Upcoming Rock Festivals">
+        <h3>Rock Festivals</h3>
+        <p>Check out the top festivals happening this year.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe">
+    <h2>Subscribe</h2>
+    <p>Join our newsletter to stay updated on the latest rock music trends!</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 American Rock Music. All rights reserved.</p>
+  </footer>
+</body>
+</html>
